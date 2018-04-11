@@ -2,7 +2,7 @@ Package: DoEstRare
 Type: Package
 Title: DoEstRare
 Version: 1.0
-Date: 2017-03-15
+Date: 2018-04-11
 Author: Elodie Persyn, Christian Dina, Lise Bellanger
 Maintainer: Elodie Persyn <elodie.persyn@univ-nantes.fr>
 Depends: R (>= 2.15)
