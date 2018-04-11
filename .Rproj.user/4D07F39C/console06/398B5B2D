@@ -1,0 +1,403 @@
+]0;~/Documents/projects/DoEstRare[?1034hmacbook-pro-3:DoEstRare elodiepersyn$ [Kmacbook-pro-3:DoEstRare elodiepersyn$ ls
+DESCRIPTION	DoEstRare.Rproj	NAMESPACE	R		man		src
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ ls -lr[Kta
+total 64
+drwxr-xr-x   9 elodiepersyn  staff   288 11 Apr 16:34 .git
+-rw-r--r--   1 elodiepersyn  staff    67 11 Apr 16:34 .gitignore
+drwxrwxrwx  14 elodiepersyn  staff   448 11 Apr 16:34 .
+-rw-r--r--   1 elodiepersyn  staff   371 11 Apr 16:34 DoEstRare.Rproj
+-rwxrwxrwx   1 elodiepersyn  staff  1461 11 Apr 16:34 .Rhistory
+drwxr-xr-x   6 elodiepersyn  staff   192 11 Apr 16:32 ..
+-rw-r--r--   1 elodiepersyn  staff   388 11 Apr 16:30 NAMESPACE
+drwxr-xr-x   4 elodiepersyn  staff   128 11 Apr 16:28 man
+drwxrwxrwx  29 elodiepersyn  staff   928 11 Apr 16:23 src
+drwxrwxrwx   6 elodiepersyn  staff   192 11 Apr 16:14 R
+-rwxrwxrwx   1 elodiepersyn  staff   312 11 Apr 15:09 DESCRIPTION
+drwxrwxrwx   5 elodiepersyn  staff   160 11 Apr 14:37 .Rproj.user
+-rw-r--r--@  1 elodiepersyn  staff  6148 11 Apr 11:24 .DS_Store
+-rwxrwxrwx   1 elodiepersyn  staff    30 17 Mar  2017 .Rbuildignore
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.DS_Store[m
+	[31m.Rbuildignore[m
+	[31m.gitignore[m
+	[31mDESCRIPTION[m
+	[31mDoEstRare.Rproj[m
+	[31mNAMESPACE[m
+	[31mR/[m
+	[31mman/[m
+	[31msrc/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git status[K[K[K[K[K[Kadd
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git add .
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	[32mnew file:   .DS_Store[m
+	[32mnew file:   .Rbuildignore[m
+	[32mnew file:   .gitignore[m
+	[32mnew file:   DESCRIPTION[m
+	[32mnew file:   DoEstRare.Rproj[m
+	[32mnew file:   NAMESPACE[m
+	[32mnew file:   R/.DS_Store[m
+	[32mnew file:   R/DoEstRare.R[m
+	[32mnew file:   R/PlotDoEstRareDensity.R[m
+	[32mnew file:   R/permutations.R[m
+	[32mnew file:   man/DoEstRare.Rd[m
+	[32mnew file:   man/PlotDoEstRareDensity.Rd[m
+	[32mnew file:   src/.DS_Store[m
+	[32mnew file:   src/DoEstRare.c[m
+	[32mnew file:   src/DoEstRare.h[m
+	[32mnew file:   src/Makevars[m
+	[32mnew file:   src/erfres.h[m
+	[32mnew file:   src/fnchyppr.cpp[m
+	[32mnew file:   src/functions.c[m
+	[32mnew file:   src/functions.h[m
+	[32mnew file:   src/init.c[m
+	[32mnew file:   src/randomc.h[m
+	[32mnew file:   src/stoc1.cpp[m
+	[32mnew file:   src/stoc3.cpp[m
+	[32mnew file:   src/stocR.cpp[m
+	[32mnew file:   src/stocR.h[m
+	[32mnew file:   src/stocc.h[m
+	[32mnew file:   src/urn2.cpp[m
+	[32mnew file:   src/wnchyppr.cpp[m
+
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git connit [K[K[K[K[Kmmit -m ""I"n"i"t"i"a"l" "c"o"m"m"i"t"."
+[master (root-commit) b168563] Initial commit.
+ Committer: Elodie Persyn <elodiepersyn@macbook-pro-3.client.kcl.ac.uk>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 29 files changed, 8243 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100755 .Rbuildignore
+ create mode 100644 .gitignore
+ create mode 100755 DESCRIPTION
+ create mode 100644 DoEstRare.Rproj
+ create mode 100644 NAMESPACE
+ create mode 100644 R/.DS_Store
+ create mode 100644 R/DoEstRare.R
+ create mode 100644 R/PlotDoEstRareDensity.R
+ create mode 100644 R/permutations.R
+ create mode 100644 man/DoEstRare.Rd
+ create mode 100644 man/PlotDoEstRareDensity.Rd
+ create mode 100644 src/.DS_Store
+ create mode 100644 src/DoEstRare.c
+ create mode 100644 src/DoEstRare.h
+ create mode 100644 src/Makevars
+ create mode 100644 src/erfres.h
+ create mode 100644 src/fnchyppr.cpp
+ create mode 100644 src/functions.c
+ create mode 100644 src/functions.h
+ create mode 100644 src/init.c
+ create mode 100644 src/randomc.h
+ create mode 100644 src/stoc1.cpp
+ create mode 100644 src/stoc3.cpp
+ create mode 100644 src/stocR.cpp
+ create mode 100644 src/stocR.h
+ create mode 100644 src/stocc.h
+ create mode 100644 src/urn2.cpp
+ create mode 100644 src/wnchyppr.cpp
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ [Kmacbook-pro-3:DoEstRare elodiepersyn$ git status
+On branch master
+nothing to commit, working tree clean
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git configure --global
+git: 'configure' is not a git command. See 'git --help'.
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git configure --global[C[C[C[C[C[C[C[C[C[1P --global[1P --global[1P --global
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git config --global
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git config --global --list
+fatal: unable to read config file '/Users/elodiepersyn/.gitconfig': No such file or directory
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ [Kmacbook-pro-3:DoEstRare elodiepersyn$ git config --global --list[K[K[K[K[K[K[K[C[C-global[C[C-globall--globali--globals--globalt--global --global
+fatal: unable to read config file '/Users/elodiepersyn/.gitconfig': No such file or directory
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git config --list --global[K[K[K[K[K[K[K[K
+core.excludesfile=~/.gitignore
+core.legacyheaders=false
+core.quotepath=false
+mergetool.keepbackup=true
+push.default=simple
+color.ui=auto
+color.interactive=auto
+repack.usedeltabaseoffset=true
+alias.s=status
+alias.a=!git add . && git status
+alias.au=!git add -u . && git status
+alias.aa=!git add . && git add -u . && git status
+alias.c=commit
+alias.cm=commit -m
+alias.ca=commit --amend
+alias.ac=!git add . && git commit
+alias.acm=!git add . && git commit -m
+alias.l=log --graph --all --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+alias.ll=log --stat --abbrev-commit
+alias.lg=log --color --graph --pretty=format:'%C(bold white)%h%Creset -%C(bold green)%d%Creset %s %C(bold green)(%cr)%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+alias.llg=log --color --graph --pretty=format:'%C(bold white)%H %d%Creset%n%s%n%+b%C(bold blue)%an <%ae>%Creset %C(bold green)%cr (%ci)' --abbrev-commit
+alias.d=diff
+alias.master=checkout master
+alias.spull=svn rebase
+alias.spush=svn dcommit
+alias.alias=!git config --list | grep 'alias\.' | sed 's/alias\.\([^=]*\)=\(.*\)/\1\	 => \2/' | sort
+include.path=~/.gitcinclude
+include.path=.githubconfig
+include.path=.gitcredential
+diff.exif.textconv=exif
+credential.helper=osxkeychain
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+core.precomposeunicode=true
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git config --global user.name
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git config --global user.name elodiepersyn"elodiepersyn[C[C[C[C[C[C[C[C[C[C[C[C"
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git config --global user.name "elodiepersyn"[K
+elodiepersyn
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git config --global user.name[C[C[C "elodiepersyn"[1P "elodiepersyn"[1P "elodiepersyn"[1P "elodiepersyn"[1P "elodiepersyn"e "elodiepersyn"m "elodiepersyn"a "elodiepersyn"i "elodiepersyn"l "elodiepersyn"[C[C[C[C[C[C[C[C[C.persyn"[C[C[C[C[C[C2"@"g"m"a"i"l"."c"o"m"
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git config --global user.email "elodie.persyn2@gmail.com"name[K[K[K[K[Kemail
+elodie.persyn2@gmail.com
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git remot add origin https://github.com/elodiepersyn/DoEstRare.git[1@e
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git remote -V
+error: unknown switch `V'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git remote -V[Kv
+origin	https://github.com/elodiepersyn/DoEstRare.git (fetch)
+origin	https://github.com/elodiepersyn/DoEstRare.git (push)
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git push origin master[K[K[K[K[K[K[K[K[K[K[K[K[K
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git push origin master
+fatal: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': elodiepersyn
+fatal: cannot run rpostback-askpass: No such file or directory
+Password for 'https://elodiepersyn@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/elodiepersyn/DoEstRare.git/'
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git push origin master
+fatal: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': elodiepersyn
+fatal: cannot run rpostback-askpass: No such file or directory
+Password for 'https://elodiepersyn@github.com': 
+Counting objects: 33, done.
+Delta compression using up to 4 threads.
+Compressing objects:   3% (1/32)   Compressing objects:   6% (2/32)   Compressing objects:   9% (3/32)   Compressing objects:  12% (4/32)   Compressing objects:  15% (5/32)   Compressing objects:  18% (6/32)   Compressing objects:  21% (7/32)   Compressing objects:  25% (8/32)   Compressing objects:  28% (9/32)   Compressing objects:  31% (10/32)   Compressing objects:  34% (11/32)   Compressing objects:  37% (12/32)   Compressing objects:  40% (13/32)   Compressing objects:  43% (14/32)   Compressing objects:  46% (15/32)   Compressing objects:  50% (16/32)   Compressing objects:  53% (17/32)   Compressing objects:  56% (18/32)   Compressing objects:  59% (19/32)   Compressing objects:  62% (20/32)   Compressing objects:  65% (21/32)   Compressing objects:  68% (22/32)   Compressing objects:  71% (23/32)   Compressing objects:  75% (24/32)   Compressing objects:  78% (25/32)   Compressing objects:  81% (26/32)   Compressing objects:  84% (27/32)   Compressing objects:  87% (28/32)   Compressing objects:  90% (29/32)   Compressing objects:  93% (30/32)   Compressing objects:  96% (31/32)   Compressing objects: 100% (32/32)   Compressing objects: 100% (32/32), done.
+Writing objects:   3% (1/33)   Writing objects:   6% (2/33)   Writing objects:  12% (4/33)   Writing objects:  15% (5/33)   Writing objects:  18% (6/33)   Writing objects:  21% (7/33)   Writing objects:  24% (8/33)   Writing objects:  27% (9/33)   Writing objects:  30% (10/33)   Writing objects:  33% (11/33)   Writing objects:  36% (12/33)   Writing objects:  39% (13/33)   Writing objects:  42% (14/33)   Writing objects:  45% (15/33)   Writing objects:  48% (16/33)   Writing objects:  51% (17/33)   Writing objects:  54% (18/33)   Writing objects:  57% (19/33)   Writing objects:  60% (20/33)   Writing objects:  63% (21/33)   Writing objects:  66% (22/33)   Writing objects:  69% (23/33)   Writing objects:  72% (24/33)   Writing objects:  75% (25/33)   Writing objects:  78% (26/33)   Writing objects:  81% (27/33)   Writing objects:  84% (28/33)   Writing objects:  87% (29/33)   Writing objects:  93% (31/33)   Writing objects:  96% (32/33)   Writing objects: 100% (33/33)   Writing objects: 100% (33/33), 78.71 KiB | 1.43 MiB/s, done.
+Total 33 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)   [Kremote: Resolving deltas:  33% (1/3)   [Kremote: Resolving deltas:  66% (2/3)   [Kremote: Resolving deltas: 100% (3/3)   [Kremote: Resolving deltas: 100% (3/3), done.[K
+To https://github.com/elodiepersyn/DoEstRare.git
+ * [new branch]      master -> master
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git push origin master[Kgit status
+On branch master
+nothing to commit, working tree clean
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ [Kmacbook-pro-3:DoEstRare elodiepersyn$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .gitignore[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.Rproj.user/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git commit -a
+[?2004h[master 4cca78e] Update .gitignore
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git push origin [K[K[K[K[K[K[K[K[K[K[K[Kstatus
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.Rproj.user/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git add .
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   .Rproj.user/4D07F39C/build_options[m
+	[32mnew file:   .Rproj.user/4D07F39C/console06/398B5B2D[m
+	[32mnew file:   .Rproj.user/4D07F39C/console06/398B5B2D.env[m
+	[32mnew file:   .Rproj.user/4D07F39C/console06/INDEX001[m
+	[32mnew file:   .Rproj.user/4D07F39C/cpp-complilation-config[m
+	[32mnew file:   .Rproj.user/4D07F39C/cpp-definition-cache[m
+	[32mnew file:   .Rproj.user/4D07F39C/pcs/debug-breakpoints.pper[m
+	[32mnew file:   .Rproj.user/4D07F39C/pcs/files-pane.pper[m
+	[32mnew file:   .Rproj.user/4D07F39C/pcs/packages-pane.pper[m
+	[32mnew file:   .Rproj.user/4D07F39C/pcs/source-pane.pper[m
+	[32mnew file:   .Rproj.user/4D07F39C/pcs/windowlayoutstate.pper[m
+	[32mnew file:   .Rproj.user/4D07F39C/pcs/workbench-pane.pper[m
+	[32mnew file:   .Rproj.user/4D07F39C/persistent-state[m
+	[32mnew file:   .Rproj.user/4D07F39C/rmd-outputs[m
+	[32mnew file:   .Rproj.user/4D07F39C/saved_source_markers[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/prop/555FF5C6[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/prop/5D70DF63[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/prop/648D4682[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/prop/8BFA7C6D[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/prop/9126907A[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/prop/9EC832A8[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/prop/AAF68A3C[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/prop/AD85969D[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/prop/AD95C30E[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/prop/INDEX[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/s-11D0A25C/3116ECF7[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/s-11D0A25C/3116ECF7-contents[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/s-11D0A25C/4B2EAEE[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/s-11D0A25C/4B2EAEE-contents[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/s-11D0A25C/83404DDB[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/s-11D0A25C/83404DDB-contents[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/s-11D0A25C/92A0926-contents[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/s-11D0A25C/C0296931[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/s-11D0A25C/C0296931-contents[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/s-11D0A25C/DCC8376E[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/s-11D0A25C/DCC8376E-contents[m
+	[32mnew file:   .Rproj.user/4D07F39C/sources/s-11D0A25C/lock_file[m
+	[32mnew file:   .Rproj.user/4D07F39C/vcs_options[m
+	[32mnew file:   .Rproj.user/6FE61B3D/cpp-complilation-config[m
+	[32mnew file:   .Rproj.user/6FE61B3D/cpp-definition-cache[m
+	[32mnew file:   .Rproj.user/6FE61B3D/pcs/debug-breakpoints.pper[m
+	[32mnew file:   .Rproj.user/6FE61B3D/pcs/files-pane.pper[m
+	[32mnew file:   .Rproj.user/6FE61B3D/pcs/source-pane.pper[m
+	[32mnew file:   .Rproj.user/6FE61B3D/pcs/windowlayoutstate.pper[m
+	[32mnew file:   .Rproj.user/6FE61B3D/pcs/workbench-pane.pper[m
+	[32mnew file:   .Rproj.user/6FE61B3D/persistent-state[m
+	[32mnew file:   .Rproj.user/6FE61B3D/saved_source_markers[m
+	[32mnew file:   .Rproj.user/6FE61B3D/sdb/per/t/694E1ECA[m
+	[32mnew file:   .Rproj.user/6FE61B3D/sdb/per/t/A7300C61[m
+	[32mnew file:   .Rproj.user/6FE61B3D/sdb/per/t/BEB8CF54[m
+	[32mnew file:   .Rproj.user/6FE61B3D/sdb/prop/15CC1A9E[m
+	[32mnew file:   .Rproj.user/6FE61B3D/sdb/prop/4F3C2930[m
+	[32mnew file:   .Rproj.user/6FE61B3D/sdb/prop/B4A7D83E[m
+	[32mnew file:   .Rproj.user/6FE61B3D/sdb/prop/INDEX[m
+	[32mnew file:   .Rproj.user/shared/notebooks/patch-chunk-names[m
+	[32mnew file:   .Rproj.user/shared/notebooks/paths[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/4D07F39C/console06/398B5B2D[m
+
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git commit[K[K[K[K[Kommit -a

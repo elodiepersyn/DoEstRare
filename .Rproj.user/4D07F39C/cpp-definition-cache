@@ -1,0 +1,1037 @@
+[
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/DoEstRare.c",
+                "kind" : 6,
+                "line" : 5,
+                "name" : "DoEstRare_stat(double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@DoEstRare_stat"
+            }
+        ],
+        "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/DoEstRare.c",
+        "file_last_write" : 1511426033
+    },
+    {
+        "definitions" : [
+        ],
+        "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/DoEstRare.h",
+        "file_last_write" : 1511426033
+    },
+    {
+        "definitions" : [
+        ],
+        "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/erfres.h",
+        "file_last_write" : 1511426033
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 33,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/fnchyppr.cpp",
+                "kind" : 7,
+                "line" : 53,
+                "name" : "mode",
+                "parent_name" : "CFishersNCHypergeometric",
+                "usr" : "c:@C@CFishersNCHypergeometric@F@mode#"
+            },
+            {
+                "column" : 34,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/fnchyppr.cpp",
+                "kind" : 7,
+                "line" : 82,
+                "name" : "mean",
+                "parent_name" : "CFishersNCHypergeometric",
+                "usr" : "c:@C@CFishersNCHypergeometric@F@mean#"
+            },
+            {
+                "column" : 34,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/fnchyppr.cpp",
+                "kind" : 7,
+                "line" : 99,
+                "name" : "variance",
+                "parent_name" : "CFishersNCHypergeometric",
+                "usr" : "c:@C@CFishersNCHypergeometric@F@variance#"
+            },
+            {
+                "column" : 34,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/fnchyppr.cpp",
+                "kind" : 7,
+                "line" : 111,
+                "name" : "moments(double *, double *)",
+                "parent_name" : "CFishersNCHypergeometric",
+                "usr" : "c:@C@CFishersNCHypergeometric@F@moments#*d#S0_#"
+            },
+            {
+                "column" : 34,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/fnchyppr.cpp",
+                "kind" : 7,
+                "line" : 139,
+                "name" : "probability(int32)",
+                "parent_name" : "CFishersNCHypergeometric",
+                "usr" : "c:@C@CFishersNCHypergeometric@F@probability#I#"
+            },
+            {
+                "column" : 34,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/fnchyppr.cpp",
+                "kind" : 7,
+                "line" : 183,
+                "name" : "probabilityRatio(int32, int32)",
+                "parent_name" : "CFishersNCHypergeometric",
+                "usr" : "c:@C@CFishersNCHypergeometric@F@probabilityRatio#I#I#"
+            },
+            {
+                "column" : 34,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/fnchyppr.cpp",
+                "kind" : 7,
+                "line" : 235,
+                "name" : "MakeTable(double *, int32, int32 *, int32 *, double)",
+                "parent_name" : "CFishersNCHypergeometric",
+                "usr" : "c:@C@CFishersNCHypergeometric@F@MakeTable#*d#I#*I#S1_#d#"
+            },
+            {
+                "column" : 34,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/fnchyppr.cpp",
+                "kind" : 7,
+                "line" : 357,
+                "name" : "lng(int32)",
+                "parent_name" : "CFishersNCHypergeometric",
+                "usr" : "c:@C@CFishersNCHypergeometric@F@lng#I#"
+            },
+            {
+                "column" : 37,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/fnchyppr.cpp",
+                "kind" : 7,
+                "line" : 432,
+                "name" : "mean(double *)",
+                "parent_name" : "CMultiFishersNCHypergeometric",
+                "usr" : "c:@C@CMultiFishersNCHypergeometric@F@mean#*d#"
+            },
+            {
+                "column" : 37,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/fnchyppr.cpp",
+                "kind" : 7,
+                "line" : 454,
+                "name" : "mean1(double *)",
+                "parent_name" : "CMultiFishersNCHypergeometric",
+                "usr" : "c:@C@CMultiFishersNCHypergeometric@F@mean1#*d#"
+            },
+            {
+                "column" : 37,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/fnchyppr.cpp",
+                "kind" : 7,
+                "line" : 503,
+                "name" : "variance(double *, double *)",
+                "parent_name" : "CMultiFishersNCHypergeometric",
+                "usr" : "c:@C@CMultiFishersNCHypergeometric@F@variance#*d#S0_#"
+            },
+            {
+                "column" : 39,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/fnchyppr.cpp",
+                "kind" : 7,
+                "line" : 547,
+                "name" : "probability(int32 *)",
+                "parent_name" : "CMultiFishersNCHypergeometric",
+                "usr" : "c:@C@CMultiFishersNCHypergeometric@F@probability#*I#"
+            },
+            {
+                "column" : 39,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/fnchyppr.cpp",
+                "kind" : 7,
+                "line" : 604,
+                "name" : "moments(double *, double *, int32 *)",
+                "parent_name" : "CMultiFishersNCHypergeometric",
+                "usr" : "c:@C@CMultiFishersNCHypergeometric@F@moments#*d#S0_#*I#"
+            },
+            {
+                "column" : 37,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/fnchyppr.cpp",
+                "kind" : 7,
+                "line" : 633,
+                "name" : "SumOfAll",
+                "parent_name" : "CMultiFishersNCHypergeometric",
+                "usr" : "c:@C@CMultiFishersNCHypergeometric@F@SumOfAll#"
+            },
+            {
+                "column" : 39,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/fnchyppr.cpp",
+                "kind" : 7,
+                "line" : 685,
+                "name" : "loop(int32, int)",
+                "parent_name" : "CMultiFishersNCHypergeometric",
+                "usr" : "c:@C@CMultiFishersNCHypergeometric@F@loop#I#I#"
+            },
+            {
+                "column" : 39,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/fnchyppr.cpp",
+                "kind" : 7,
+                "line" : 730,
+                "name" : "lng(int32 *)",
+                "parent_name" : "CMultiFishersNCHypergeometric",
+                "usr" : "c:@C@CMultiFishersNCHypergeometric@F@lng#*I#"
+            }
+        ],
+        "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/fnchyppr.cpp",
+        "file_last_write" : 1511426033
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/functions.c",
+                "kind" : 6,
+                "line" : 3,
+                "name" : "densite(double *, double *, int, int, int, double, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@densite"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/functions.c",
+                "kind" : 6,
+                "line" : 15,
+                "name" : "GaussianKernel(double)",
+                "parent_name" : "",
+                "usr" : "c:@F@GaussianKernel"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/functions.c",
+                "kind" : 6,
+                "line" : 21,
+                "name" : "initialize(double *, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@initialize"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/functions.c",
+                "kind" : 6,
+                "line" : 28,
+                "name" : "proport(double *, double *, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@proport"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/functions.c",
+                "kind" : 6,
+                "line" : 36,
+                "name" : "sum(double *, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@sum"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/functions.c",
+                "kind" : 6,
+                "line" : 47,
+                "name" : "createMatrixFromRVector(double **, double *, int, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@createMatrixFromRVector"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/functions.c",
+                "kind" : 6,
+                "line" : 57,
+                "name" : "colSum_ctrl(double *, double **, double *, int, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@colSum_ctrl"
+            },
+            {
+                "column" : 6,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/functions.c",
+                "kind" : 6,
+                "line" : 70,
+                "name" : "colSum_case(double *, double **, double *, int, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@colSum_case"
+            }
+        ],
+        "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/functions.c",
+        "file_last_write" : 1511426033
+    },
+    {
+        "definitions" : [
+        ],
+        "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/functions.h",
+        "file_last_write" : 1511426033
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/init.c",
+                "kind" : 6,
+                "line" : 26,
+                "name" : "R_init_DoEstRare(DllInfo *)",
+                "parent_name" : "",
+                "usr" : "c:@F@R_init_DoEstRare"
+            }
+        ],
+        "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/init.c",
+        "file_last_write" : 1511426033
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 31,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/randomc.h",
+                "kind" : 8,
+                "line" : 103,
+                "name" : "int32",
+                "parent_name" : "",
+                "usr" : "c:randomc.h@T@int32"
+            },
+            {
+                "column" : 31,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/randomc.h",
+                "kind" : 8,
+                "line" : 104,
+                "name" : "uint32",
+                "parent_name" : "",
+                "usr" : "c:randomc.h@T@uint32"
+            },
+            {
+                "column" : 7,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/randomc.h",
+                "kind" : 2,
+                "line" : 120,
+                "name" : "TRandomMersenne",
+                "parent_name" : "",
+                "usr" : "c:@C@TRandomMersenne"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/randomc.h",
+                "kind" : 4,
+                "line" : 158,
+                "name" : "TArch",
+                "parent_name" : "",
+                "usr" : "c:@C@TRandomMersenne@E@TArch"
+            },
+            {
+                "column" : 7,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/randomc.h",
+                "kind" : 2,
+                "line" : 162,
+                "name" : "TRanrotBGenerator",
+                "parent_name" : "",
+                "usr" : "c:@C@TRanrotBGenerator"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/randomc.h",
+                "kind" : 4,
+                "line" : 163,
+                "name" : "constants",
+                "parent_name" : "",
+                "usr" : "c:@C@TRanrotBGenerator@E@constants"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/randomc.h",
+                "kind" : 4,
+                "line" : 174,
+                "name" : "TArch",
+                "parent_name" : "",
+                "usr" : "c:@C@TRanrotBGenerator@E@TArch"
+            },
+            {
+                "column" : 7,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/randomc.h",
+                "kind" : 2,
+                "line" : 179,
+                "name" : "TRanrotWGenerator",
+                "parent_name" : "",
+                "usr" : "c:@C@TRanrotWGenerator"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/randomc.h",
+                "kind" : 4,
+                "line" : 180,
+                "name" : "constants",
+                "parent_name" : "",
+                "usr" : "c:@C@TRanrotWGenerator@E@constants"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/randomc.h",
+                "kind" : 4,
+                "line" : 195,
+                "name" : "TArch",
+                "parent_name" : "",
+                "usr" : "c:@C@TRanrotWGenerator@E@TArch"
+            },
+            {
+                "column" : 7,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/randomc.h",
+                "kind" : 2,
+                "line" : 199,
+                "name" : "TRandomMotherOfAll",
+                "parent_name" : "",
+                "usr" : "c:@C@TRandomMotherOfAll"
+            }
+        ],
+        "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/randomc.h",
+        "file_last_write" : 1511426033
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 8,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stoc1.cpp",
+                "kind" : 6,
+                "line" : 35,
+                "name" : "LnFac(int32)",
+                "parent_name" : "",
+                "usr" : "c:@F@LnFac#I#"
+            },
+            {
+                "column" : 23,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stoc1.cpp",
+                "kind" : 7,
+                "line" : 84,
+                "name" : "Hypergeometric(int32, int32, int32)",
+                "parent_name" : "StochasticLib1",
+                "usr" : "c:@C@StochasticLib1@F@Hypergeometric#I#I#I#"
+            },
+            {
+                "column" : 23,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stoc1.cpp",
+                "kind" : 7,
+                "line" : 143,
+                "name" : "HypInversionMod(int32, int32, int32)",
+                "parent_name" : "StochasticLib1",
+                "usr" : "c:@C@StochasticLib1@F@HypInversionMod#I#I#I#"
+            },
+            {
+                "column" : 23,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stoc1.cpp",
+                "kind" : 7,
+                "line" : 242,
+                "name" : "HypRatioOfUnifoms(int32, int32, int32)",
+                "parent_name" : "StochasticLib1",
+                "usr" : "c:@C@StochasticLib1@F@HypRatioOfUnifoms#I#I#I#"
+            },
+            {
+                "column" : 24,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stoc1.cpp",
+                "kind" : 7,
+                "line" : 303,
+                "name" : "fc_lnpk(int32, int32, int32, int32)",
+                "parent_name" : "StochasticLib1",
+                "usr" : "c:@C@StochasticLib1@F@fc_lnpk#I#I#I#I#S"
+            }
+        ],
+        "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stoc1.cpp",
+        "file_last_write" : 1511426033
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 22,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stoc3.cpp",
+                "kind" : 7,
+                "line" : 48,
+                "name" : "SetAccuracy(double)",
+                "parent_name" : "StochasticLib3",
+                "usr" : "c:@C@StochasticLib3@F@SetAccuracy#d#"
+            },
+            {
+                "column" : 23,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stoc3.cpp",
+                "kind" : 7,
+                "line" : 61,
+                "name" : "WalleniusNCHyp(int32, int32, int32, double)",
+                "parent_name" : "StochasticLib3",
+                "usr" : "c:@C@StochasticLib3@F@WalleniusNCHyp#I#I#I#d#"
+            },
+            {
+                "column" : 23,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stoc3.cpp",
+                "kind" : 7,
+                "line" : 119,
+                "name" : "WalleniusNCHypUrn(int32, int32, int32, double)",
+                "parent_name" : "StochasticLib3",
+                "usr" : "c:@C@StochasticLib3@F@WalleniusNCHypUrn#I#I#I#d#"
+            },
+            {
+                "column" : 23,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stoc3.cpp",
+                "kind" : 7,
+                "line" : 141,
+                "name" : "WalleniusNCHypTable(int32, int32, int32, double)",
+                "parent_name" : "StochasticLib3",
+                "usr" : "c:@C@StochasticLib3@F@WalleniusNCHypTable#I#I#I#d#"
+            },
+            {
+                "column" : 23,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stoc3.cpp",
+                "kind" : 7,
+                "line" : 180,
+                "name" : "WalleniusNCHypRatioOfUnifoms(int32, int32, int32, double)",
+                "parent_name" : "StochasticLib3",
+                "usr" : "c:@C@StochasticLib3@F@WalleniusNCHypRatioOfUnifoms#I#I#I#d#"
+            },
+            {
+                "column" : 23,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stoc3.cpp",
+                "kind" : 7,
+                "line" : 297,
+                "name" : "WalleniusNCHypInversion(int32, int32, int32, double)",
+                "parent_name" : "StochasticLib3",
+                "usr" : "c:@C@StochasticLib3@F@WalleniusNCHypInversion#I#I#I#d#"
+            },
+            {
+                "column" : 22,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stoc3.cpp",
+                "kind" : 7,
+                "line" : 350,
+                "name" : "MultiWalleniusNCHyp(int32 *, int32 *, double *, int32, int)",
+                "parent_name" : "StochasticLib3",
+                "usr" : "c:@C@StochasticLib3@F@MultiWalleniusNCHyp#*I#S0_#*d#I#I#"
+            },
+            {
+                "column" : 22,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stoc3.cpp",
+                "kind" : 7,
+                "line" : 692,
+                "name" : "MultiComplWalleniusNCHyp(int32 *, int32 *, double *, int32, int)",
+                "parent_name" : "StochasticLib3",
+                "usr" : "c:@C@StochasticLib3@F@MultiComplWalleniusNCHyp#*I#S0_#*d#I#I#"
+            },
+            {
+                "column" : 23,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stoc3.cpp",
+                "kind" : 7,
+                "line" : 721,
+                "name" : "FishersNCHyp(int32, int32, int32, double)",
+                "parent_name" : "StochasticLib3",
+                "usr" : "c:@C@StochasticLib3@F@FishersNCHyp#I#I#I#d#"
+            },
+            {
+                "column" : 23,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stoc3.cpp",
+                "kind" : 7,
+                "line" : 790,
+                "name" : "FishersNCHypInversion(int32, int32, int32, double)",
+                "parent_name" : "StochasticLib3",
+                "usr" : "c:@C@StochasticLib3@F@FishersNCHypInversion#I#I#I#d#"
+            },
+            {
+                "column" : 23,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stoc3.cpp",
+                "kind" : 7,
+                "line" : 867,
+                "name" : "FishersNCHypRatioOfUnifoms(int32, int32, int32, double)",
+                "parent_name" : "StochasticLib3",
+                "usr" : "c:@C@StochasticLib3@F@FishersNCHypRatioOfUnifoms#I#I#I#d#"
+            },
+            {
+                "column" : 22,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stoc3.cpp",
+                "kind" : 7,
+                "line" : 947,
+                "name" : "MultiFishersNCHyp(int32 *, int32 *, double *, int32, int)",
+                "parent_name" : "StochasticLib3",
+                "usr" : "c:@C@StochasticLib3@F@MultiFishersNCHyp#*I#S0_#*d#I#I#"
+            }
+        ],
+        "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stoc3.cpp",
+        "file_last_write" : 1511426033
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stocR.cpp",
+                "kind" : 6,
+                "line" : 22,
+                "name" : "FatalError(const char *)",
+                "parent_name" : "",
+                "usr" : "c:@F@FatalError#*1C#"
+            }
+        ],
+        "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stocR.cpp",
+        "file_last_write" : 1511426033
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stocR.h",
+                "kind" : 2,
+                "line" : 75,
+                "name" : "StocRBase",
+                "parent_name" : "",
+                "usr" : "c:@C@StocRBase"
+            },
+            {
+                "column" : 16,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stocR.h",
+                "kind" : 7,
+                "line" : 81,
+                "name" : "InitRan",
+                "parent_name" : "StocRBase",
+                "usr" : "c:@C@StocRBase@F@InitRan#S"
+            },
+            {
+                "column" : 16,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stocR.h",
+                "kind" : 7,
+                "line" : 83,
+                "name" : "EndRan",
+                "parent_name" : "StocRBase",
+                "usr" : "c:@C@StocRBase@F@EndRan#S"
+            },
+            {
+                "column" : 11,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stocR.h",
+                "kind" : 7,
+                "line" : 85,
+                "name" : "Random",
+                "parent_name" : "StocRBase",
+                "usr" : "c:@C@StocRBase@F@Random#"
+            },
+            {
+                "column" : 11,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stocR.h",
+                "kind" : 7,
+                "line" : 87,
+                "name" : "Normal(double, double)",
+                "parent_name" : "StocRBase",
+                "usr" : "c:@C@StocRBase@F@Normal#d#d#"
+            }
+        ],
+        "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stocR.h",
+        "file_last_write" : 1511426033
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stocc.h",
+                "kind" : 2,
+                "line" : 274,
+                "name" : "StochasticLib1",
+                "parent_name" : "",
+                "usr" : "c:@C@StochasticLib1"
+            },
+            {
+                "column" : 7,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stocc.h",
+                "kind" : 2,
+                "line" : 313,
+                "name" : "StochasticLib2",
+                "parent_name" : "",
+                "usr" : "c:@C@StochasticLib2"
+            },
+            {
+                "column" : 7,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stocc.h",
+                "kind" : 2,
+                "line" : 337,
+                "name" : "StochasticLib3",
+                "parent_name" : "",
+                "usr" : "c:@C@StochasticLib3"
+            },
+            {
+                "column" : 7,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stocc.h",
+                "kind" : 2,
+                "line" : 365,
+                "name" : "CWalleniusNCHypergeometric",
+                "parent_name" : "",
+                "usr" : "c:@C@CWalleniusNCHypergeometric"
+            },
+            {
+                "column" : 7,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stocc.h",
+                "kind" : 2,
+                "line" : 410,
+                "name" : "CMultiWalleniusNCHypergeometric",
+                "parent_name" : "",
+                "usr" : "c:@C@CMultiWalleniusNCHypergeometric"
+            },
+            {
+                "column" : 7,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stocc.h",
+                "kind" : 2,
+                "line" : 450,
+                "name" : "CMultiWalleniusNCHypergeometricMoments",
+                "parent_name" : "",
+                "usr" : "c:@C@CMultiWalleniusNCHypergeometricMoments"
+            },
+            {
+                "column" : 7,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stocc.h",
+                "kind" : 2,
+                "line" : 476,
+                "name" : "CFishersNCHypergeometric",
+                "parent_name" : "",
+                "usr" : "c:@C@CFishersNCHypergeometric"
+            },
+            {
+                "column" : 7,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stocc.h",
+                "kind" : 2,
+                "line" : 512,
+                "name" : "CMultiFishersNCHypergeometric",
+                "parent_name" : "",
+                "usr" : "c:@C@CMultiFishersNCHypergeometric"
+            }
+        ],
+        "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/stocc.h",
+        "file_last_write" : 1511426033
+    },
+    {
+        "definitions" : [
+        ],
+        "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/urn2.cpp",
+        "file_last_write" : 1511426033
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 8,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 6,
+                "line" : 58,
+                "name" : "pow2_1(double, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@pow2_1#d#*d#"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 6,
+                "line" : 76,
+                "name" : "log1mx(double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@log1mx#d#d#"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 6,
+                "line" : 87,
+                "name" : "log1pow(double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@log1pow#d#d#"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 6,
+                "line" : 196,
+                "name" : "LnFacr(double)",
+                "parent_name" : "",
+                "usr" : "c:@F@LnFacr#d#"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 6,
+                "line" : 218,
+                "name" : "FallingFactorial(double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@FallingFactorial#d#d#"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 6,
+                "line" : 249,
+                "name" : "Erf(double)",
+                "parent_name" : "",
+                "usr" : "c:@F@Erf#d#"
+            },
+            {
+                "column" : 7,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 6,
+                "line" : 288,
+                "name" : "FloorLog2(float)",
+                "parent_name" : "",
+                "usr" : "c:@F@FloorLog2#f#"
+            },
+            {
+                "column" : 5,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 6,
+                "line" : 320,
+                "name" : "NumSD(double)",
+                "parent_name" : "",
+                "usr" : "c:@F@NumSD#d#"
+            },
+            {
+                "column" : 34,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 346,
+                "name" : "SetParameters(int32, int32, int32, double)",
+                "parent_name" : "CWalleniusNCHypergeometric",
+                "usr" : "c:@C@CWalleniusNCHypergeometric@F@SetParameters#I#I#I#d#"
+            },
+            {
+                "column" : 36,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 357,
+                "name" : "mean",
+                "parent_name" : "CWalleniusNCHypergeometric",
+                "usr" : "c:@C@CWalleniusNCHypergeometric@F@mean#"
+            },
+            {
+                "column" : 36,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 437,
+                "name" : "variance",
+                "parent_name" : "CWalleniusNCHypergeometric",
+                "usr" : "c:@C@CWalleniusNCHypergeometric@F@variance#"
+            },
+            {
+                "column" : 36,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 449,
+                "name" : "moments(double *, double *)",
+                "parent_name" : "CWalleniusNCHypergeometric",
+                "usr" : "c:@C@CWalleniusNCHypergeometric@F@moments#*d#S0_#"
+            },
+            {
+                "column" : 35,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 477,
+                "name" : "mode",
+                "parent_name" : "CWalleniusNCHypergeometric",
+                "usr" : "c:@C@CWalleniusNCHypergeometric@F@mode#"
+            },
+            {
+                "column" : 36,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 522,
+                "name" : "lnbico",
+                "parent_name" : "CWalleniusNCHypergeometric",
+                "usr" : "c:@C@CWalleniusNCHypergeometric@F@lnbico#"
+            },
+            {
+                "column" : 34,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 547,
+                "name" : "findpars",
+                "parent_name" : "CWalleniusNCHypergeometric",
+                "usr" : "c:@C@CWalleniusNCHypergeometric@F@findpars#"
+            },
+            {
+                "column" : 33,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 623,
+                "name" : "BernouilliH(int32, double, double, StochasticLib1 *)",
+                "parent_name" : "CWalleniusNCHypergeometric",
+                "usr" : "c:@C@CWalleniusNCHypergeometric@F@BernouilliH#I#d#d#*$@C@StochasticLib1#"
+            },
+            {
+                "column" : 36,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 714,
+                "name" : "recursive",
+                "parent_name" : "CWalleniusNCHypergeometric",
+                "usr" : "c:@C@CWalleniusNCHypergeometric@F@recursive#"
+            },
+            {
+                "column" : 36,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 766,
+                "name" : "binoexpand",
+                "parent_name" : "CWalleniusNCHypergeometric",
+                "usr" : "c:@C@CWalleniusNCHypergeometric@F@binoexpand#"
+            },
+            {
+                "column" : 36,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 796,
+                "name" : "laplace",
+                "parent_name" : "CWalleniusNCHypergeometric",
+                "usr" : "c:@C@CWalleniusNCHypergeometric@F@laplace#"
+            },
+            {
+                "column" : 36,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 941,
+                "name" : "integrate",
+                "parent_name" : "CWalleniusNCHypergeometric",
+                "usr" : "c:@C@CWalleniusNCHypergeometric@F@integrate#"
+            },
+            {
+                "column" : 36,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 1014,
+                "name" : "integrate_step(double, double)",
+                "parent_name" : "CWalleniusNCHypergeometric",
+                "usr" : "c:@C@CWalleniusNCHypergeometric@F@integrate_step#d#d#"
+            },
+            {
+                "column" : 36,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 1066,
+                "name" : "search_inflect(double, double)",
+                "parent_name" : "CWalleniusNCHypergeometric",
+                "usr" : "c:@C@CWalleniusNCHypergeometric@F@search_inflect#d#d#"
+            },
+            {
+                "column" : 36,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 1164,
+                "name" : "probability(int32)",
+                "parent_name" : "CWalleniusNCHypergeometric",
+                "usr" : "c:@C@CWalleniusNCHypergeometric@F@probability#I#"
+            },
+            {
+                "column" : 35,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 1204,
+                "name" : "MakeTable(double *, int32, int32 *, int32 *, double)",
+                "parent_name" : "CWalleniusNCHypergeometric",
+                "usr" : "c:@C@CWalleniusNCHypergeometric@F@MakeTable#*d#I#*I#S1_#d#"
+            },
+            {
+                "column" : 39,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 1364,
+                "name" : "SetParameters(int32, int32 *, double *, int)",
+                "parent_name" : "CMultiWalleniusNCHypergeometric",
+                "usr" : "c:@C@CMultiWalleniusNCHypergeometric@F@SetParameters#I#*I#*d#I#"
+            },
+            {
+                "column" : 39,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 1380,
+                "name" : "mean(double *)",
+                "parent_name" : "CMultiWalleniusNCHypergeometric",
+                "usr" : "c:@C@CMultiWalleniusNCHypergeometric@F@mean#*d#"
+            },
+            {
+                "column" : 39,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 1444,
+                "name" : "variance(double *, double *)",
+                "parent_name" : "CMultiWalleniusNCHypergeometric",
+                "usr" : "c:@C@CMultiWalleniusNCHypergeometric@F@variance#*d#S0_#"
+            },
+            {
+                "column" : 41,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 1476,
+                "name" : "binoexpand",
+                "parent_name" : "CMultiWalleniusNCHypergeometric",
+                "usr" : "c:@C@CMultiWalleniusNCHypergeometric@F@binoexpand#"
+            },
+            {
+                "column" : 41,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 1492,
+                "name" : "lnbico",
+                "parent_name" : "CMultiWalleniusNCHypergeometric",
+                "usr" : "c:@C@CMultiWalleniusNCHypergeometric@F@lnbico#"
+            },
+            {
+                "column" : 39,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 1505,
+                "name" : "findpars",
+                "parent_name" : "CMultiWalleniusNCHypergeometric",
+                "usr" : "c:@C@CMultiWalleniusNCHypergeometric@F@findpars#"
+            },
+            {
+                "column" : 41,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 1579,
+                "name" : "laplace",
+                "parent_name" : "CMultiWalleniusNCHypergeometric",
+                "usr" : "c:@C@CMultiWalleniusNCHypergeometric@F@laplace#"
+            },
+            {
+                "column" : 41,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 1728,
+                "name" : "integrate",
+                "parent_name" : "CMultiWalleniusNCHypergeometric",
+                "usr" : "c:@C@CMultiWalleniusNCHypergeometric@F@integrate#"
+            },
+            {
+                "column" : 41,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 1803,
+                "name" : "integrate_step(double, double)",
+                "parent_name" : "CMultiWalleniusNCHypergeometric",
+                "usr" : "c:@C@CMultiWalleniusNCHypergeometric@F@integrate_step#d#d#"
+            },
+            {
+                "column" : 41,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 1861,
+                "name" : "search_inflect(double, double)",
+                "parent_name" : "CMultiWalleniusNCHypergeometric",
+                "usr" : "c:@C@CMultiWalleniusNCHypergeometric@F@search_inflect#d#d#"
+            },
+            {
+                "column" : 41,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 1957,
+                "name" : "probability(int32 *)",
+                "parent_name" : "CMultiWalleniusNCHypergeometric",
+                "usr" : "c:@C@CMultiWalleniusNCHypergeometric@F@probability#*I#"
+            },
+            {
+                "column" : 48,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 2019,
+                "name" : "moments(double *, double *, int32 *)",
+                "parent_name" : "CMultiWalleniusNCHypergeometricMoments",
+                "usr" : "c:@C@CMultiWalleniusNCHypergeometricMoments@F@moments#*d#S0_#*I#"
+            },
+            {
+                "column" : 48,
+                "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+                "kind" : 7,
+                "line" : 2059,
+                "name" : "loop(int32, int)",
+                "parent_name" : "CMultiWalleniusNCHypergeometricMoments",
+                "usr" : "c:@C@CMultiWalleniusNCHypergeometricMoments@F@loop#I#I#"
+            }
+        ],
+        "file" : "/Users/elodiepersyn/Documents/projects/DoEstRare/src/wnchyppr.cpp",
+        "file_last_write" : 1511426033
+    }
+]

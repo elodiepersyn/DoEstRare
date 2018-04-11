@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1523459692725.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "DCC8376E",
+    "lastKnownWriteTime" : 1523460148,
+    "last_content_update" : 1523460148539,
+    "path" : "~/Documents/projects/DoEstRare/R/DoEstRare.R",
+    "project_path" : "R/DoEstRare.R",
+    "properties" : {
+        "cursorPosition" : "51,12",
+        "scrollLine" : "48"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

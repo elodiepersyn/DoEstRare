@@ -1,0 +1,15 @@
+{
+    "args" : [
+        "-I/Applications/RStudio.app/Contents/Resources/resources/libclang/builtin-headers/3.5",
+        "-I/Applications/RStudio.app/Contents/Resources/resources/libclang/builtin-headers/libc++/3.5",
+        "-I/Library/Frameworks/R.framework/Resources/include",
+        "-DNDEBUG",
+        "-DR_BUILD=1",
+        "-DMAXCOLORS=10000",
+        "-I/usr/local/include",
+        "-fPIC"
+    ],
+    "hash" : "15234557481511426033",
+    "is_cpp" : true,
+    "pch" : ""
+}
