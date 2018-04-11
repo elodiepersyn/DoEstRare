@@ -69,6 +69,11 @@
 #' #adaptive phenotype permutation procedure
 #' DoEstRare(pheno, geno, position, genome.size, alpha=0.05, c=0.2, autosomal=FALSE, gender=gender)
 #' 
+#' # Covariate adjustment
+#' Z=sample(c(0,1), 1000, replace=TRUE)
+#' DoEstRare(pheno, geno, position, genome.size, alpha=0.05, c=0.2,
+#'           autosomal=FALSE, gender=gender, Z=Z)
+#' 
 DoEstRare=function(pheno, geno, position, genome.size,  Z=NULL, perm=NULL, alpha=NULL, c=NULL, autosomal=TRUE, gender=NULL){
 
   #check
