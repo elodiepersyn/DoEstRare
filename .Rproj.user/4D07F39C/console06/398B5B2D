@@ -401,3 +401,84 @@ Changes not staged for commit:
 	[31mmodified:   .Rproj.user/4D07F39C/console06/398B5B2D[m
 
 ]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git commit[K[K[K[K[Kommit -a
+[?2004h[master de812fd] Update .gitignore
+ 57 files changed, 2428 insertions(+), 1 deletion(-)
+ create mode 100644 .Rproj.user/4D07F39C/build_options
+ create mode 100644 .Rproj.user/4D07F39C/console06/398B5B2D
+ create mode 100644 .Rproj.user/4D07F39C/console06/398B5B2D.env
+ create mode 100644 .Rproj.user/4D07F39C/console06/INDEX001
+ create mode 100644 .Rproj.user/4D07F39C/cpp-complilation-config
+ create mode 100644 .Rproj.user/4D07F39C/cpp-definition-cache
+ create mode 100644 .Rproj.user/4D07F39C/pcs/debug-breakpoints.pper
+ create mode 100644 .Rproj.user/4D07F39C/pcs/files-pane.pper
+ create mode 100644 .Rproj.user/4D07F39C/pcs/packages-pane.pper
+ create mode 100644 .Rproj.user/4D07F39C/pcs/source-pane.pper
+ create mode 100644 .Rproj.user/4D07F39C/pcs/windowlayoutstate.pper
+ create mode 100644 .Rproj.user/4D07F39C/pcs/workbench-pane.pper
+ create mode 100644 .Rproj.user/4D07F39C/persistent-state
+ create mode 100644 .Rproj.user/4D07F39C/rmd-outputs
+ create mode 100644 .Rproj.user/4D07F39C/saved_source_markers
+ create mode 100644 .Rproj.user/4D07F39C/sources/prop/555FF5C6
+ create mode 100644 .Rproj.user/4D07F39C/sources/prop/5D70DF63
+ create mode 100644 .Rproj.user/4D07F39C/sources/prop/648D4682
+ create mode 100644 .Rproj.user/4D07F39C/sources/prop/8BFA7C6D
+ create mode 100644 .Rproj.user/4D07F39C/sources/prop/9126907A
+ create mode 100644 .Rproj.user/4D07F39C/sources/prop/9EC832A8
+ create mode 100644 .Rproj.user/4D07F39C/sources/prop/AAF68A3C
+ create mode 100644 .Rproj.user/4D07F39C/sources/prop/AD85969D
+ create mode 100644 .Rproj.user/4D07F39C/sources/prop/AD95C30E
+ create mode 100644 .Rproj.user/4D07F39C/sources/prop/INDEX
+ create mode 100644 .Rproj.user/4D07F39C/sources/s-11D0A25C/3116ECF7
+ create mode 100644 .Rproj.user/4D07F39C/sources/s-11D0A25C/3116ECF7-contents
+ create mode 100644 .Rproj.user/4D07F39C/sources/s-11D0A25C/4B2EAEE
+ create mode 100644 .Rproj.user/4D07F39C/sources/s-11D0A25C/4B2EAEE-contents
+ create mode 100644 .Rproj.user/4D07F39C/sources/s-11D0A25C/83404DDB
+ create mode 100644 .Rproj.user/4D07F39C/sources/s-11D0A25C/83404DDB-contents
+ create mode 100644 .Rproj.user/4D07F39C/sources/s-11D0A25C/92A0926-contents
+ create mode 100644 .Rproj.user/4D07F39C/sources/s-11D0A25C/C0296931
+ create mode 100644 .Rproj.user/4D07F39C/sources/s-11D0A25C/C0296931-contents
+ create mode 100644 .Rproj.user/4D07F39C/sources/s-11D0A25C/DCC8376E
+ create mode 100644 .Rproj.user/4D07F39C/sources/s-11D0A25C/DCC8376E-contents
+ create mode 100644 .Rproj.user/4D07F39C/sources/s-11D0A25C/lock_file
+ create mode 100644 .Rproj.user/4D07F39C/vcs_options
+ create mode 100755 .Rproj.user/6FE61B3D/cpp-complilation-config
+ create mode 100755 .Rproj.user/6FE61B3D/cpp-definition-cache
+ create mode 100755 .Rproj.user/6FE61B3D/pcs/debug-breakpoints.pper
+ create mode 100755 .Rproj.user/6FE61B3D/pcs/files-pane.pper
+ create mode 100755 .Rproj.user/6FE61B3D/pcs/source-pane.pper
+ create mode 100755 .Rproj.user/6FE61B3D/pcs/windowlayoutstate.pper
+ create mode 100755 .Rproj.user/6FE61B3D/pcs/workbench-pane.pper
+ create mode 100755 .Rproj.user/6FE61B3D/persistent-state
+ create mode 100755 .Rproj.user/6FE61B3D/saved_source_markers
+ create mode 100755 .Rproj.user/6FE61B3D/sdb/per/t/694E1ECA
+ create mode 100755 .Rproj.user/6FE61B3D/sdb/per/t/A7300C61
+ create mode 100755 .Rproj.user/6FE61B3D/sdb/per/t/BEB8CF54
+ create mode 100755 .Rproj.user/6FE61B3D/sdb/prop/15CC1A9E
+ create mode 100755 .Rproj.user/6FE61B3D/sdb/prop/4F3C2930
+ create mode 100755 .Rproj.user/6FE61B3D/sdb/prop/B4A7D83E
+ create mode 100755 .Rproj.user/6FE61B3D/sdb/prop/INDEX
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git commit -a[Kgit status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/4D07F39C/console06/398B5B2D[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git reset HEAD[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/4D07F39C/console06/398B5B2D[m
+	[31mmodified:   .Rproj.user/4D07F39C/sources/prop/AAF68A3C[m
+	[31mmodified:   .Rproj.user/4D07F39C/sources/s-11D0A25C/3116ECF7[m
+	[31mmodified:   .Rproj.user/4D07F39C/sources/s-11D0A25C/3116ECF7-contents[m
+	[31mmodified:   .gitignore[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Documents/projects/DoEstRaremacbook-pro-3:DoEstRare elodiepersyn$ git status

@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "563001983",
+    "hash" : "1340387142",
     "id" : "3116ECF7",
-    "lastKnownWriteTime" : 1523462230,
-    "last_content_update" : 1523462230765,
+    "lastKnownWriteTime" : 1523462419,
+    "last_content_update" : 1523462419811,
     "path" : "~/Documents/projects/DoEstRare/.gitignore",
     "project_path" : ".gitignore",
     "properties" : {
-        "cursorPosition" : "0,8",
+        "cursorPosition" : "0,7",
         "scrollLine" : "0"
     },
     "relative_order" : 5,
