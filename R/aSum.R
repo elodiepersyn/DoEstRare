@@ -1,4 +1,7 @@
 #' Adaptive Sum test
+#' 
+#' @description 
+#' Performs the adaptive sum test described by Han and Pan (2010).
 #'
 #' @param Y a numeric vector of phenotypes. Affected individuals are coded 1 and unaffected individuals are coded 0.
 #' @param X a numeric matrix of genotypes (row: individual, column: variant). Genotypes are coded 0,1 or 2 corresponding to the number of minor alleles.
@@ -7,7 +10,7 @@
 #' @param perm number of permutations. If not NULL,a "standard permutation procedure" is performed to compute the significance. See Details. 
 #' @param alpha error level. If not NULL,an "adaptive permutation procedure" is performed to compute the significance. See Details.
 #' @param c precision of the p-value. If not NULL,an "adaptive permutation procedure" is performed to compute the significance. See Details.
-#' @param alpha0
+#' @param alpha0 p-value threshold for protective variants.
 #'
 #' @details 
 #' \subsection{Permutation procedures}{
@@ -42,6 +45,16 @@
 #' @useDynLib DoEstRare aSum_stat
 #'
 #' @examples
+#' X=matrix(sample(c(0,1,2), prob=c(0.999,0.001,0),replace=TRUE, 50000), nrow=500)
+#' m=apply(X, MARGIN=2, 'sum')
+#' X=X[,-which(m==0), drop=FALSE]
+#' Y=sample(c(0,1), replace=TRUE, 500)
+#' Z=NULL
+#'
+#' alpha=0.05
+#' c=0.2
+#' 
+#' res=aSum.test(X=X, Y=Y, alpha=alpha, c=c); res
 #' 
 #' 
 aSum.test=function(Y, X, Z=NULL, correction="Price", perm=100, alpha=NULL, c=NULL, alpha0=0.10){

@@ -1,5 +1,8 @@
 #' Weighted Sum test
 #'
+#' @description 
+#' Performs the weighted sum test described by Madsen and Browning (2009).
+#'
 #' @param Y a numeric vector of phenotypes. Affected individuals are coded 1 and unaffected individuals are coded 0.
 #' @param X a numeric matrix of genotypes (row: individual, column: variant). Genotypes are coded 0,1 or 2 corresponding to the number of minor alleles.
 #' @param Z optional numeric matrix of covariates. See Details. 
@@ -7,8 +10,8 @@
 #' @param perm number of permutations. If not NULL,a "standard permutation procedure" is performed to compute the significance. See Details. 
 #' @param alpha error level. If not NULL,an "adaptive permutation procedure" is performed to compute the significance. See Details.
 #' @param c precision of the p-value. If not NULL,an "adaptive permutation procedure" is performed to compute the significance. See Details.
-#' @param weight.type 
-#' @param weights 
+#' @param weight.type onderation type. By default the ponderation is "Madsen-Browning". For a beta distribution  of parameters 1, 25, choose "beta".
+#' @param weights numeric vector of weights. By default weights=NULL and argument weight.type will be used.
 #' @param autosomal boolean. If TRUE, autosomal chromosome; FALSE, X chromosome.
 #' @param gender numeric vector. 1=male; 2=female.
 #'
@@ -45,7 +48,16 @@
 #' @useDynLib DoEstRare wSum_stat
 #'
 #' @examples
+#' X=matrix(sample(c(0,1,2), prob=c(0.999,0.001,0),replace=TRUE, 50000), nrow=500)
+#' m=apply(X, MARGIN=2, 'sum')
+#' X=X[,-which(m==0), drop=FALSE]
+#' Y=sample(c(0,1), replace=TRUE, 500)
+#' Z=NULL
+#'
+#' alpha=0.05
+#' c=0.2
 #' 
+#' res=wSum.test(X=X, Y=Y, alpha=alpha, c=c); res
 #' 
 wSum.test=function(Y, X, Z=NULL, correction="Price", perm=100, alpha=NULL, c=NULL, weight.type="Madsen-Browning", weights=NULL, autosomal=TRUE, gender=rep(0, length(Y))){
   

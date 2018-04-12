@@ -65,7 +65,7 @@
 #' #X gene
 #' gender=rep(c(1,2), each=500)
 #' #standard phenotype permutation procedure
-#' DoEstRare(Y, geno, position, genome.size, perm=perm, autosomal=FALSE, gender=gender)
+#' DoEstRare(Y, X, position, genome.size, perm=perm, autosomal=FALSE, gender=gender)
 #' #adaptive phenotype permutation procedure
 #' DoEstRare(Y, X, position, genome.size, alpha=0.05, c=0.2, autosomal=FALSE, gender=gender)
 #' 

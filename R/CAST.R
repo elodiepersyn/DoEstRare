@@ -1,4 +1,7 @@
 #' CAST (Cohort Allelic Sum Test)
+#' 
+#' @description 
+#' Performs the CAST test described by Morgenthaler and Thilly (2007).
 #'
 #' @param Y a numeric vector of phenotypes. Affected individuals are coded 1 and unaffected individuals are coded 0.
 #' @param X a numeric matrix of genotypes (row: individual, column: variant). Genotypes are coded 0,1 or 2 corresponding to the number of minor alleles.
@@ -50,7 +53,7 @@
 #' alpha=0.05
 #' c=0.2
 #' 
-#' res=Sum.test(X, Y, alpha=alpha, c=c); res
+#' res=CAST.test(X=X, Y=Y, alpha=alpha, c=c); res
 #' 
 CAST.test=function(Y, X, Z=NULL, correction="Price", perm=100, alpha=NULL, c=NULL){
   

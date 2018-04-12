@@ -27,7 +27,7 @@ CAST.test(Y, X, Z = NULL, correction = "Price", perm = 100,
 \item{stat}{the test statistic. }
 }
 \description{
-CAST (Cohort Allelic Sum Test)
+Performs the CAST test described by Morgenthaler and Thilly (2007).
 }
 \details{
 \subsection{Permutation procedures}{
@@ -54,7 +54,7 @@ Z=NULL
 alpha=0.05
 c=0.2
 
-res=Sum.test(X, Y, alpha=alpha, c=c); res
+res=CAST.test(X=X, Y=Y, alpha=alpha, c=c); res
 
 }
 \references{
