@@ -2,7 +2,7 @@
 #include <Rmath.h>
 #include <Rinternals.h>
 #include <math.h>
-#include "functions.h"
+#include "functions_burdentests.h"
 
 
 void Sum_stat(double* X_, double* Y, double* Ymu, double* Na_, double* Nu_, double* P_, double* stat_);

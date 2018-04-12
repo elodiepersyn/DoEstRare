@@ -5,6 +5,17 @@
  * STATS
  */
 
+void colSum(double* colsum_vect, double**M, int N, int P){
+  initialize(colsum_vect, P);
+  int i=0;
+  int j=0;
+  for(i=0; i<N; i++){
+    for(j=0; j<P; j++){
+      colsum_vect[j]=colsum_vect[j]+M[i][j];
+    }
+  }
+}
+
 void rowSum(double* rowsum_vect, double** M, int N, int P){
   int i=0;
   int j=0;
@@ -16,16 +27,7 @@ void rowSum(double* rowsum_vect, double** M, int N, int P){
   }
 }
 
-void colSum(double* colsum_vect, double**M, int N, int P){
-  initialize(colsum_vect, P);
-  int i=0;
-  int j=0;
-  for(i=0; i<N; i++){
-    for(j=0; j<P; j++){
-      colsum_vect[j]=colsum_vect[j]+M[i][j];
-    }
-  }
-}
+
 
 void colSum_group(double* colsum_vect, double**M, double* Y, int N, int P){
   initialize(colsum_vect, P);
@@ -59,14 +61,7 @@ double max(double* vect, int size){
   return maximum;
 }
 
-double sum(double* vect, int size){
-  double sum=0;
-  int i=0;
-  for(i=0; i<size; i++){
-    sum=sum+vect[i];
-  }
-  return sum;
-}
+
 
 double sum_group(double* vect, double* Y, int size){
   double sum=0;
@@ -251,66 +246,6 @@ double Uscore_univariate(double* S, double* Y, double* Ymu, int N){
 
 
 
-
-//----------initialize a null vector
-void initialize(double* vect, int size){
-  int i=0;
-  for(i=0; i<size; i++){
-    vect[i]=0;
-  }
-}
-
-//---------permutate a vector
-void permutate(double* vect, double* vect_perm, int size){
-  double random=0;
-  int round_random=0;
-
-  int i=0;
-  int j=0;
-  int ind;
-
-  double* indice=malloc(size*sizeof(double));
-
-  for(i=0; i<size; i++){
-    indice[i]=i;
-  }
-
-  for(i=0; i<size; i++){
-    random=runif(-0.5,(size-1-i)+0.5);
-    round_random=round(random);
-
-    ind=indice[round_random];
-    vect_perm[i]=vect[ind];
-
-    //update indices
-    if(round_random!=(size-1-i)){
-
-      for(j=round_random; j<(size-1-i); j++){
-        indice[j]=indice[j+1];
-      }
-    }
-  }
-
-  free(indice);
-}
-
-void CopyVector(double* vect, double* vect2, int size){
-  int i=0;
-  for(i=0; i<size; i++){
-    vect2[i]=vect[i];
-  }
-}
-
-//------------create a matrix from a vector
-void createMatrixFromRVector(double** M, double* v, int n_ind, int n_col){
-  int i=0;
-  int j=0;
-  for(i=0; i<n_ind; i++){
-    for(j=0; j<n_col; j++){
-      M[i][j]=v[n_ind*j+i];
-    }
-  }
-}
 
 void selectColumn(double* S, double** M, int N, int P, int j){
   int i=0;

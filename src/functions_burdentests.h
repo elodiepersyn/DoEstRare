@@ -4,16 +4,17 @@
 #include <Rmath.h>
 #include <Rinternals.h>
 #include <math.h>
-
+#include "functions_shared.h"
 
 //stats
+
 void rowSum(double* rowsum_vect, double**M, int N, int P); //computes row sums of the matrix M (N x P) into the vector rowsum_vect
 void colSum(double* colsum_vect, double**M, int N, int P);  //computes col sums of the matrix M (N x P) into the vector colsum_vect
 void colSum_group(double* colsum_vect, double**M, double* Y, int N, int P); //computes col sums of the matrix M (N x P) into the vector colsum_vect for the controls specified into the Y phenotype vector
 
 double mean(double* vect, int size);  //mean of a vector
 double max(double* vect, int size);   //max of a vector
-double sum(double* vect, int size);   //sum of a vector
+
 double sum_group(double* vect, double* Y, int size);  //sum of the vector for controls
 
 void rowSum_weighted(double* vect, double** M, double* weight, int N, int P); //row sum for the matrix M (N x P), with weights for each colum of M.
@@ -32,12 +33,11 @@ double single_score_stat(double* S, double* Y, double* Ymu, int N); //computes t
 double Uscore_univariate(double* S, double* Y, double* Ymu, int N); //computes the score U
 
 //vector
-void initialize(double* vect, int size); //initialize a vector with null values
-void permutate(double* vect, double* vect_perm, int size); //permutates a vector
+
 void CopyVector(double* vect, double* vect2, int size);
 
 //matrix
-void createMatrixFromRVector(double** M, double* v, int n_ind, int n_col);
+
 void selectColumn(double* S, double** M, int N, int P, int j);
 
 //algebra

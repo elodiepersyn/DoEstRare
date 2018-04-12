@@ -18,12 +18,7 @@ double GaussianKernel(double u){
   return k;
 }
 
-void initialize(double* vect, int size){
-  int i=0;
-  for(i=0; i<size; i++){
-    vect[i]=0;
-  }
-}
+
 
 void proport(double* prop, double* vect, int size){
   initialize(prop, size);
@@ -33,26 +28,11 @@ void proport(double* prop, double* vect, int size){
   }
 }
 
-double sum(double* vect, int size){
-  int i=0;
-  double somme=0;
-  for(i=0; i<size; i++){
-    somme=somme+vect[i];
-  }
-  return somme;
-}
+
 
 
 //------------create a matrix from a vector
-void createMatrixFromRVector(double** M, double* v, int n_ind, int n_col){
-  int i=0;
-  int j=0;
-  for(i=0; i<n_ind; i++){
-    for(j=0; j<n_col; j++){
-      M[i][j]=v[n_ind*j+i];
-    }
-  }
-}
+
 
 void colSum_ctrl(double* colsum_vect, double**M, double* Y, int N, int P){
   initialize(colsum_vect, P);
