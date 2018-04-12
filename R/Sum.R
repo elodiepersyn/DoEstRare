@@ -40,6 +40,7 @@
 #'
 #' 
 #' @export
+#' @useDynLib DoEstRare Sum_stat
 #'
 #' @examples
 #' 

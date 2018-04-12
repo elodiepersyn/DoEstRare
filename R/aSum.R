@@ -39,6 +39,7 @@
 #'
 #' 
 #' @export
+#' @useDynLib DoEstRare aSum_stat
 #'
 #' @examples
 #' 

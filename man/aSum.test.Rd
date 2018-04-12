@@ -4,23 +4,23 @@
 \alias{aSum.test}
 \title{Adaptive Sum test}
 \usage{
-aSum.test(X, Y, Z = NULL, correction = "Price", alpha = NULL, c = NULL,
-  perm = 100, alpha0 = 0.1)
+aSum.test(Y, X, Z = NULL, correction = "Price", perm = 100,
+  alpha = NULL, c = NULL, alpha0 = 0.1)
 }
 \arguments{
-\item{X}{a numeric matrix of genotypes (row: individual, column: variant). Genotypes are coded 0,1 or 2 corresponding to the number of minor alleles.}
-
 \item{Y}{a numeric vector of phenotypes. Affected individuals are coded 1 and unaffected individuals are coded 0.}
+
+\item{X}{a numeric matrix of genotypes (row: individual, column: variant). Genotypes are coded 0,1 or 2 corresponding to the number of minor alleles.}
 
 \item{Z}{optional numeric matrix of covariates. See Details.}
 
 \item{correction}{type of covariates adjustment. See Details.}
 
+\item{perm}{number of permutations. If not NULL,a "standard permutation procedure" is performed to compute the significance. See Details.}
+
 \item{alpha}{error level. If not NULL,an "adaptive permutation procedure" is performed to compute the significance. See Details.}
 
 \item{c}{precision of the p-value. If not NULL,an "adaptive permutation procedure" is performed to compute the significance. See Details.}
-
-\item{perm}{number of permutations. If not NULL,a "standard permutation procedure" is performed to compute the significance. See Details.}
 
 \item{alpha0}{}
 }
