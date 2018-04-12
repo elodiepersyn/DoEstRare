@@ -2,8 +2,8 @@
 #' 
 #' @description Rare variant association test comparing position density functions and mutation counts between cases and controls.
 #' 
-#' @param pheno a numeric vector of phenotypes. Affected individuals are coded 1 and unaffected individuals are coded 0.
-#' @param geno a numeric matrix of genotypes (row: individual, column: variant). Genotypes are coded 0,1 or 2 corresponding to the number of minor alleles.
+#' @param Y a numeric vector of phenotypes. Affected individuals are coded 1 and unaffected individuals are coded 0.
+#' @param X a numeric matrix of genotypes (row: individual, column: variant). Genotypes are coded 0,1 or 2 corresponding to the number of minor alleles.
 #' @param position a numeric vector of variant positions. 
 #' @param genome.size a numeric value corresponding to the length of the analyzed region. 
 #' @param Z optional numeric matrix of covariables. See Details. 
@@ -50,40 +50,40 @@
 #' 
 #'
 #' @examples
-#' pheno=rep(c(0,1), 500)
-#' geno=matrix(sample(c(0,1),prob=c(0.7,0.3) ,1000*30, replace=TRUE), ncol=30)
+#' Y=rep(c(0,1), 500)
+#' X=matrix(sample(c(0,1),prob=c(0.7,0.3) ,1000*30, replace=TRUE), ncol=30)
 #' position=sample(1:500,30)
 #' genome.size=500
 #' perm=200
 #'
 #' #Autosomal gene
 #' #standard phenotype permutation procedure
-#' DoEstRare(pheno, geno, position, genome.size, perm=perm)
+#' DoEstRare(Y, X, position, genome.size, perm=perm)
 #' #adaptive phenotype permutation procedure
-#' DoEstRare(pheno, geno, position, genome.size, alpha=0.05, c=0.2)
+#' DoEstRare(Y, X, position, genome.size, alpha=0.05, c=0.2)
 #'
 #' #X gene
 #' gender=rep(c(1,2), each=500)
 #' #standard phenotype permutation procedure
-#' DoEstRare(pheno, geno, position, genome.size, perm=perm, autosomal=FALSE, gender=gender)
+#' DoEstRare(Y, geno, position, genome.size, perm=perm, autosomal=FALSE, gender=gender)
 #' #adaptive phenotype permutation procedure
-#' DoEstRare(pheno, geno, position, genome.size, alpha=0.05, c=0.2, autosomal=FALSE, gender=gender)
+#' DoEstRare(Y, X, position, genome.size, alpha=0.05, c=0.2, autosomal=FALSE, gender=gender)
 #' 
-DoEstRare=function(pheno, geno, position, genome.size,  Z=NULL, perm=NULL, alpha=NULL, c=NULL, autosomal=TRUE, gender=NULL){
+DoEstRare=function(Y, X, position, genome.size,  Z=NULL, perm=NULL, alpha=NULL, c=NULL, autosomal=TRUE, gender=NULL){
 
   #check
-  #phenotype
-  if(!is.numeric(pheno)){
-    stop("argument \"pheno\" requires a numeric vector")
+  #Ytype
+  if(!is.numeric(Y)){
+    stop("argument \"Y\" requires a numeric vector")
   }
-  tab=as.data.frame(table(pheno))
+  tab=as.data.frame(table(Y))
   if(nrow(tab)==2){
   }else{
-    stop("The phenotype is not a binary trait")
+    stop("The Ytype is not a binary trait")
   }
 
-  if(length(pheno)!=nrow(geno)){
-    stop("the \"pheno\" vector length is not equal to the number of rows in the \"geno\" matrix")
+  if(length(Y)!=nrow(X)){
+    stop("the \"Y\" vector length is not equal to the number of rows in the \"X\" matrix")
   }
 
   #position
@@ -91,8 +91,8 @@ DoEstRare=function(pheno, geno, position, genome.size,  Z=NULL, perm=NULL, alpha
     stop("argument \"position argument\" requires a numeric vector")
   }
 
-  if(length(position)!=ncol(geno)){
-    stop("the \"position\" vector length is not equal to the number of columns in the \"geno\" matrix")
+  if(length(position)!=ncol(X)){
+    stop("the \"position\" vector length is not equal to the number of columns in the \"X\" matrix")
   }
 
   #genome.size
@@ -118,17 +118,17 @@ DoEstRare=function(pheno, geno, position, genome.size,  Z=NULL, perm=NULL, alpha
     warning("Only one rare variant position, NA value returned")
   }else{
 
-    P=ncol(geno)   #number of variants
-    N=nrow(geno)   #number of individuals
+    P=ncol(X)   #number of variants
+    N=nrow(X)   #number of individuals
     from=1
     to=genome.size
     bw=bw.nrd0(position)
-    Ncase=sum(pheno)
+    Ncase=sum(Y)
 
     stat_obs=.C("DoEstRare_stat",
                 as.numeric(0),
-                as.numeric(c(geno)),
-                as.numeric(pheno),
+                as.numeric(c(X)),
+                as.numeric(Y),
                 as.numeric(N),
                 as.numeric(P),
                 as.numeric(autosomal),
@@ -139,24 +139,24 @@ DoEstRare=function(pheno, geno, position, genome.size,  Z=NULL, perm=NULL, alpha
                 as.numeric(bw))[[1]]
 
     if(!is.null(Z)){
-      model <- glm (pheno~Z, family= binomial())
+      model <- glm (Y~Z, family= binomial())
       d.odds <- exp (model$linear.predictors)
-      m1 <- c(rep(1, length(pheno)))
+      m1 <- c(rep(1, length(Y)))
     }
 
     if(!is.null(perm)){
       stat_perm=rep(NA,perm)
       for(i in 1:perm){
         if(is.null(Z)){
-          pheno_perm=sample(pheno)
+          Y_perm=sample(Y)
         }else{
-          pheno_perm <- rMFNCHypergeo(1, m1, Ncase, d.odds)
+          Y_perm <- rMFNCHypergeo(1, m1, Ncase, d.odds)
         }
 
         stat_perm[i]=.C("DoEstRare_stat",
                         as.numeric(0),
-                        as.numeric(c(geno)),
-                        as.numeric(pheno_perm),
+                        as.numeric(c(X)),
+                        as.numeric(Y_perm),
                         as.numeric(N),
                         as.numeric(P),
                         as.numeric(autosomal),
@@ -178,15 +178,15 @@ DoEstRare=function(pheno, geno, position, genome.size,  Z=NULL, perm=NULL, alpha
         stat_perm=NA
 
         if(is.null(Z)){
-          pheno_perm=sample(pheno)
+          Y_perm=sample(Y)
         }else{
-          pheno_perm <- rMFNCHypergeo(1, m1, Ncase, d.odds)
+          Y_perm <- rMFNCHypergeo(1, m1, Ncase, d.odds)
         }
 
         stat_perm=.C("DoEstRare_stat",
                      as.numeric(0),
-                     as.numeric(c(geno)),
-                     as.numeric(pheno_perm),
+                     as.numeric(c(X)),
+                     as.numeric(Y_perm),
                      as.numeric(N),
                      as.numeric(P),
                      as.numeric(autosomal),
