@@ -4,6 +4,7 @@
 #include <Rmath.h>
 #include <Rinternals.h>
 #include <math.h>
+#include "functions_shared.h"
 
 #define pi 3.14159265359
 
