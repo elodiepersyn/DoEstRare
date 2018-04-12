@@ -72,14 +72,14 @@
 DoEstRare=function(Y, X, position, genome.size,  Z=NULL, perm=NULL, alpha=NULL, c=NULL, autosomal=TRUE, gender=NULL){
 
   #check
-  #Ytype
+  #phenotype
   if(!is.numeric(Y)){
     stop("argument \"Y\" requires a numeric vector")
   }
   tab=as.data.frame(table(Y))
   if(nrow(tab)==2){
   }else{
-    stop("The Ytype is not a binary trait")
+    stop("The phenotype is not a binary trait")
   }
 
   if(length(Y)!=nrow(X)){
