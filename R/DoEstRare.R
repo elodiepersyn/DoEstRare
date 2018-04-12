@@ -6,7 +6,7 @@
 #' @param X a numeric matrix of genotypes (row: individual, column: variant). Genotypes are coded 0,1 or 2 corresponding to the number of minor alleles.
 #' @param position a numeric vector of variant positions. 
 #' @param genome.size a numeric value corresponding to the length of the analyzed region. 
-#' @param Z optional numeric matrix of covariables. See Details. 
+#' @param Z optional numeric matrix of covariates. See Details. 
 #' @param perm number of permutations. If not NULL,a "standard permutation procedure" is performed to compute the significance. See Details. 
 #' @param alpha error level. If not NULL,an "adaptive permutation procedure" is performed to compute the significance. See Details.
 #' @param c precision of the p-value. If not NULL,an "adaptive permutation procedure" is performed to compute the significance. See Details.
@@ -22,8 +22,8 @@
 #'  In the adaptive permutation procedure, the user specifies, in the argument "alpha", the significance to achieve after multiple testing correction. In the argument "c", the estimation precision of the p-value. In function of these two paremeters, the maximal number of permutations and the maximal number of success to achieve will be computed. If the maximal number of success is reached, the p-value will be \eqn{R/B}. If not, the maximal number of permutations will be used to compute the p-value \eqn{(R+1)(B+1)}.
 #' }
 #'
-#' \subsection{Adjustment for covariables}{
-#'  The adjustment for covariables is based on the permutation procedure described by Epstein et al. (2012).
+#' \subsection{Adjustment for covariates}{
+#'  The adjustment for covariates is based on the permutation procedure described by Epstein et al. (2012).
 #'  
 #'  This package incorporates code from the package R BiasedUrn for the Multivariate Fisher NonCentral Hypergeometric distribution. The modification resides in a different installation settings that enables the analysis of thousands of individuals,
 #' }
