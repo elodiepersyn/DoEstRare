@@ -70,6 +70,11 @@ DoEstRare(pheno, geno, position, genome.size, perm=perm, autosomal=FALSE, gender
 #adaptive phenotype permutation procedure
 DoEstRare(pheno, geno, position, genome.size, alpha=0.05, c=0.2, autosomal=FALSE, gender=gender)
 
+# Covariate adjustment
+Z=sample(c(0,1), 1000, replace=TRUE)
+DoEstRare(pheno, geno, position, genome.size, alpha=0.05, c=0.2,
+          autosomal=FALSE, gender=gender, Z=Z)
+
 }
 \references{
 Persyn E, Karakachoff M, Le Scouarnec S, et al (2017) DoEstRare: A statistical test to identify local enrichments in rare genomic variants associated with disease. PLOS ONE 12:e0179364 . doi: 10.1371/journal.pone.0179364
