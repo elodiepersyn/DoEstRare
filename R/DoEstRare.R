@@ -55,19 +55,25 @@
 #' position=sample(1:500,30)
 #' genome.size=500
 #' perm=200
-#'
-#' #Autosomal gene
-#' #standard phenotype permutation procedure
+#' 
+#' ## Permutation procedures
+#' # Standard permutation procedure
 #' DoEstRare(Y, X, position, genome.size, perm=perm)
-#' #adaptive phenotype permutation procedure
+#' 
+#' # Adaptive phenotype permutation procedure
 #' DoEstRare(Y, X, position, genome.size, alpha=0.05, c=0.2)
-#'
-#' #X gene
+#' 
+#' ## Autosomal / X gene
+#' # Autosomal gene
+#' DoEstRare(Y, X, position, genome.size, perm=perm)
+#' 
+#' # X gene
 #' gender=rep(c(1,2), each=500)
-#' #standard phenotype permutation procedure
 #' DoEstRare(Y, X, position, genome.size, perm=perm, autosomal=FALSE, gender=gender)
-#' #adaptive phenotype permutation procedure
-#' DoEstRare(Y, X, position, genome.size, alpha=0.05, c=0.2, autosomal=FALSE, gender=gender)
+#' 
+#' ## Adjustment for covariates
+#' Z=rnorm(1000)
+#' DoEstRare(Y, X, position, genome.size, perm=perm, Z=Z)
 #' 
 DoEstRare=function(Y, X, position, genome.size,  Z=NULL, perm=NULL, alpha=NULL, c=NULL, autosomal=TRUE, gender=NULL){
 
